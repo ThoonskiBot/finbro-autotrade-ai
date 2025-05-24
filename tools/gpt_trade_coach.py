@@ -1,1 +1,2 @@
-# Placeholder script for GPT Strategy Coach
+# GPT-based coaching feedback engine
+print('Running gpt_trade_coach')

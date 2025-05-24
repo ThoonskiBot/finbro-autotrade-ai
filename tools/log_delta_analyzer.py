@@ -1,2 +1,2 @@
-# Detects changes in trade log behavior
-print("🔍 Analyzing log delta for drift...")
+# Analyzes changes in trade logic over time
+print('Running log_delta_analyzer')

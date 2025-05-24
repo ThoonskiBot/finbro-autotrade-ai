@@ -1,1 +1,2 @@
-# Determines which module contributed to each successful trade
+# Tracks which signals and features drive alpha
+print('Running alpha_attribution_engine')
