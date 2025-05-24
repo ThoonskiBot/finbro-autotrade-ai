@@ -1,10 +1,7 @@
 
-import sys, os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-import openai
-from datetime import datetime
+import openai, os
 from core.config import OPENAI_API_KEY, LOG_PATH, REPORTS_PATH
+from datetime import datetime
 
 def generate_reflection():
     logs = sorted([f for f in os.listdir(LOG_PATH) if f.startswith("order_log_")], reverse=True)
@@ -27,6 +24,3 @@ def generate_reflection():
     with open(path, "w", encoding="utf-8") as f:
         f.write(summary)
     print(f"✅ Reflection saved to: {path}")
-
-if __name__ == "__main__":
-    generate_reflection()

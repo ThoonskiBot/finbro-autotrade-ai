@@ -1,7 +1,5 @@
 
-import sys, os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
+import os
 from collections import defaultdict
 from core.config import LOG_PATH
 

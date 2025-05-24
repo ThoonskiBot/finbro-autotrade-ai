@@ -1,11 +1,9 @@
 
-import sys, os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
+import os
 import pandas as pd
 import matplotlib.pyplot as plt
-from datetime import datetime
 from core.config import LOG_PATH, REPORTS_PATH
+from datetime import datetime
 
 def generate_live_pnl_chart():
     records = []
@@ -35,19 +33,10 @@ def generate_live_pnl_chart():
     plt.tight_layout()
 
     os.makedirs(REPORTS_PATH, exist_ok=True)
-    chart_name = "live_pnl_chart_latest.png"
-    out_path = os.path.join(REPORTS_PATH, chart_name)
-
-    static_dir = os.path.join(os.path.dirname(__file__), "..", "static")
-    os.makedirs(static_dir, exist_ok=True)
-    static_path = os.path.join(static_dir, chart_name)
-
+    out_path = os.path.join(REPORTS_PATH, f"live_pnl_chart_{datetime.now().strftime('%Y%m%d_%H%M')}.png")
     plt.savefig(out_path)
-    plt.savefig(static_path)
     plt.close()
-
-    print(f"✅ Chart saved to: {out_path}")
-    print(f"✅ Static version saved to: {static_path}")
+    print(f"✅ Live PnL chart saved to: {out_path}")
 
 if __name__ == "__main__":
     generate_live_pnl_chart()

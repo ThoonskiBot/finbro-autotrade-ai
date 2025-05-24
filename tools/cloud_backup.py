@@ -1,11 +1,11 @@
-import shutil
-from datetime import datetime
-from pathlib import Path
 
-def backup_logs_to_local_cloud(log_dir="logs", cloud_dir="cloud_backup"):
-    src = Path(log_dir)
-    dst = Path(cloud_dir) / datetime.now().strftime("%Y-%m-%d")
-    dst.mkdir(parents=True, exist_ok=True)
-    for file in src.glob("log_*.txt"):
-        shutil.copy(file, dst)
-    return str(dst)
+import shutil
+import os
+from datetime import datetime
+
+def backup_to_folder(source_dir, backup_dir="D:/FINBRO_CloudBackup"):
+    os.makedirs(backup_dir, exist_ok=True)
+    ts = datetime.now().strftime("%Y%m%d_%H%M")
+    dest = os.path.join(backup_dir, f"backup_{ts}")
+    shutil.copytree(source_dir, dest)
+    print(f"✅ Backed up FINBRO data to: {dest}")
