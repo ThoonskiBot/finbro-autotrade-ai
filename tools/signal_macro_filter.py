@@ -1,0 +1,1 @@
+# Filters signals based on sentiment/macro score

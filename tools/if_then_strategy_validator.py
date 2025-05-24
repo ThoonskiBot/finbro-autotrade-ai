@@ -1,0 +1,1 @@
+# Verifies strategy intent matches actual execution

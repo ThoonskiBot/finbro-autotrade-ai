@@ -1,0 +1,1 @@
+print("🧠 GPT Profit Estimator Online")

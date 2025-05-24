@@ -1,0 +1,1 @@
+# Combines logic from multiple strategies into unified signals

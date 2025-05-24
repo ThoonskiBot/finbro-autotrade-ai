@@ -1,0 +1,1 @@
+# GPT analyzes previous day's logs and gives feedback

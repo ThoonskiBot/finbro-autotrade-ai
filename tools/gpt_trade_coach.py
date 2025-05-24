@@ -1,0 +1,1 @@
+# Placeholder script for GPT Strategy Coach

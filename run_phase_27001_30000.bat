@@ -1,0 +1,16 @@
+@echo off
+py tools\phase_27001_market_router.py
+py tools\phase_27002_market_prompt_profiles.py
+py tools\phase_27003_alpha_blender.py
+py tools\phase_27004_market_regime_detector.py
+py tools\phase_27005_strategy_allocator.py
+py tools\phase_28001_memory_builder.py
+py tools\phase_28002_pnl_narrative_archiver.py
+py tools\phase_28003_alpha_pattern_scanner.py
+py tools\phase_28004_strategy_mapper.py
+py tools\phase_28005_legacy_validator.py
+py tools\phase_29001_prompt_optimizer.py
+py tools\phase_29002_meta_model_selector.py
+py tools\phase_29003_confidence_governor.py
+py tools\phase_29004_bias_pruner.py
+py tools\phase_29005_autonomous_prompt_deployer.py

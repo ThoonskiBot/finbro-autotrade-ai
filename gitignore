@@ -1,0 +1,21 @@
+# FINBRO Git Ignore
+
+# OS/Editor
+*.DS_Store
+*.swp
+__pycache__/
+
+# Logs and reports
+logs/
+reports/
+backups/
+
+# Models and artifacts
+models/
+*.pkl
+*.h5
+*.joblib
+
+# Sensitive files
+.env
+secrets/

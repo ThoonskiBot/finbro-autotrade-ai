@@ -1,0 +1,1 @@
+# Generates a real-time dashboard with strategy and GPT insights

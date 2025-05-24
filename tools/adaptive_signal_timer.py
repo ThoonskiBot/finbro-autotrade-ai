@@ -1,0 +1,1 @@
+# Adjusts signal frequency dynamically based on volatility/volume

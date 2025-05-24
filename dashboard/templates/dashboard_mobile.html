@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FINBRO Mobile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="30">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <style>
+    body { font-family: sans-serif; margin: 10px; }
+    img, canvas { max-width: 100%; height: auto; }
+  </style>
+</head>
+<body>
+  <h2>📊 FINBRO Mobile Dashboard</h2>
+
+  <div><strong>GPT Summary:</strong></div>
+  <pre>{{ gpt_summary }}</pre>
+
+  <div><strong>PnL Chart:</strong></div>
+  <div id="pnlChart" style="width:100%;height:300px;"></div>
+
+  <div><strong>Live Alpaca PnL:</strong></div>
+  <div>
+    {% if alpaca.error %}
+      ❌ {{ alpaca.error }}
+    {% else %}
+      💰 Equity: ${{ alpaca.equity }} <br>
+      📉 Change: ${{ alpaca.change }}
+    {% endif %}
+  </div>
+
+  <script>
+    var chartData = {{ chart_data | safe }};
+    Plotly.newPlot('pnlChart', chartData.data, chartData.layout, {responsive: true});
+  </script>
+</body>
+</html>

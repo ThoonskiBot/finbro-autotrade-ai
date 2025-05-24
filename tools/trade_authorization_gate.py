@@ -1,0 +1,1 @@
+# Sends signals for manual approval before execution (via Telegram or CLI)

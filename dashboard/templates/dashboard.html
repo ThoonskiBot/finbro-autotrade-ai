@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FINBRO Dashboard</title>
+  <meta http-equiv="refresh" content="30">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+  <h1>📊 FINBRO Dashboard</h1>
+
+  <h2>📸 Trade Preview (Auto-updating)</h2>
+  <img src="/static/previews/daily_trade_summary_chart_2025-05-21_preview.jpg" width="600"/>
+
+  <h2>📄 GPT Summary (Today)</h2>
+  <pre>{{ gpt_summary }}</pre>
+
+  <h2>📈 Net PnL Over Time</h2>
+  <div id="pnlChart" style="width:800px;height:400px;"></div>
+
+  <h2>💰 Live Alpaca PnL</h2>
+  <div>
+    {% if alpaca.error %}
+      <b>Error:</b> {{ alpaca.error }}
+    {% else %}
+      Equity: ${{ alpaca.equity }}<br>
+      Yesterday: ${{ alpaca.last_equity }}<br>
+      Change: <b>${{ alpaca.change }}</b>
+    {% endif %}
+  </div>
+
+  <script>
+    var chartData = {{ chart_data | safe }};
+    Plotly.newPlot('pnlChart', chartData.data, chartData.layout);
+  </script>
+</body>
+</html>

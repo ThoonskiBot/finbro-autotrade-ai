@@ -1,0 +1,4 @@
+Ticker,Action,Strategy
+AAPL,BUY,Momentum
+MSFT,SELL,Reversal
+GOOGL,HOLD,Neutral

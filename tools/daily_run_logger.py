@@ -1,0 +1,1 @@
+# Appends a summary of daily run results to a log file

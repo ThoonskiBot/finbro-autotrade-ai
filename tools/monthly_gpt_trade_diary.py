@@ -1,0 +1,1 @@
+# Generates monthly GPT trade review summary

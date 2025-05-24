@@ -1,0 +1,1 @@
+print("🌡 Live signal heatmap rendering (stub for browser component).")

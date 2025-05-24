@@ -1,0 +1,1 @@
+# Local voice alerts using pyttsx3 or TTS for high-confidence events

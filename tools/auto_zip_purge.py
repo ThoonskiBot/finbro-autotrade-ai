@@ -1,0 +1,1 @@
+# Zips logs/reports weekly, deletes files older than 30 days

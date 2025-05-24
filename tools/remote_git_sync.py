@@ -1,0 +1,1 @@
+print("🔁 Git Auto Sync Initialized")

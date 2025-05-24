@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FINBRO Dashboard</title>
+    <style>
+        body { background: #121212; color: white; font-family: Arial; padding: 20px; }
+        .section { margin-bottom: 20px; padding: 15px; background: #1e1e1e; border-radius: 8px; }
+    </style>
+    <script>
+        function refreshDashboard() {
+            fetch("/status").then(res => res.json()).then(data => {
+                document.getElementById("gpt_summary").innerText = data.gpt;
+                document.getElementById("pnl_comment").innerText = data.pnl_summary;
+                document.getElementById("signals").innerHTML = data.signals.map(s => `<li>${s}</li>`).join('');
+                document.getElementById("strategy_states").innerHTML = Object.entries(data.strategies).map(
+                    ([s, on]) => `<li>${s}: ${on ? "✅ ACTIVE" : "❌ DISABLED"}</li>`).join('');
+                document.getElementById("pnl_chart").src = "/static/pnl_chart.png?ts=" + new Date().getTime();
+            });
+        }
+        setInterval(refreshDashboard, 10000);
+        window.onload = refreshDashboard;
+    </script>
+</head>
+<body>
+    <h1>🧠 FINBRO Command Center</h1>
+    <div class="section"><h2>Strategy States</h2><ul id="strategy_states">Loading...</ul></div>
+    <div class="section"><h2>Live PnL Chart</h2><img id="pnl_chart" src="/static/pnl_chart.png" width="600"></div>
+    <div class="section"><h2>GPT PnL Summary</h2><p id="pnl_comment">Loading...</p></div>
+    <div class="section"><h2>GPT Trade Summary</h2><p id="gpt_summary">Loading...</p></div>
+    <div class="section"><h2>Live Signal Log</h2><ul id="signals">Loading...</ul></div>
+</body>
+</html>

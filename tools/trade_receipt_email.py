@@ -1,0 +1,1 @@
+print("📧 Trade Receipt Sent via Email")

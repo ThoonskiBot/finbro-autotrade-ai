@@ -1,0 +1,1 @@
+# Tracks overused strategies and suggests cooldown
