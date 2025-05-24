@@ -15,4 +15,3 @@ echo 📲 Sending Telegram Report...
 py -3.11 tools\send_gpt_to_telegram.py
 
 echo ✅ FINBRO Full Auto Run Complete.
-pause

@@ -1,2 +1,2 @@
 @echo off
-py -3.11 tools\strategy_selector.py
+python tools\strategy_selector_by_regime.py
