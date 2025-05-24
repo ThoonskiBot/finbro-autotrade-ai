@@ -1,2 +1,2 @@
-# GPT explains trade outcomes
-print("🧠 GPT analyzing why this trade worked or failed...")
+# GPT explains trades
+print('Running gpt_trade_explainer')
