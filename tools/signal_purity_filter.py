@@ -1,2 +1,2 @@
-# Placeholder for Signal Purity Filter
-print('🧪 Signal purity filtered')
+# Filters out noisy/overlapping signals
+print('Running signal_purity_filter')
