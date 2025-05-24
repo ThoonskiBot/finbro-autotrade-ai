@@ -1,0 +1,1 @@
+Get-ChildItem "$PSScriptRoot\..\tools" | ForEach-Object { Move-Item $_.FullName "C:\FINBRO\tools\$($_.Name)" -Force }

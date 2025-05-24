@@ -1,0 +1,1 @@
+# Filters signals using macro + sentiment + strategy memory

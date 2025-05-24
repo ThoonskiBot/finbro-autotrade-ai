@@ -1,0 +1,9 @@
+@echo off
+py tools\alpaca_trade_executor.py
+py tools\stoploss_takeprofit_manager.py
+py tools\trailing_stop_controller.py
+py tools\order_retry_handler.py
+py tools\balance_sync_tracker.py
+py tools\trade_receipt_telegram.py
+py tools\trade_receipt_email.py
+py tools\gpt_trade_explainer.py

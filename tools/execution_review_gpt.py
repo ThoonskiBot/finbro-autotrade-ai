@@ -1,0 +1,1 @@
+# GPT compares expected outcome vs actual trade result

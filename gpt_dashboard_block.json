@@ -1,0 +1,10 @@
+{
+  "component": "GPT Summary Block",
+  "title": "GPT Risk Summary",
+  "source_file": "C:/FINBRO/reports/gpt_risk_review_latest.txt",
+  "style": {
+    "fontSize": "14px",
+    "border": "1px solid #ccc",
+    "padding": "10px"
+  }
+}

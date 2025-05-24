@@ -1,0 +1,1 @@
+# Builds new strategies from trade history + macro

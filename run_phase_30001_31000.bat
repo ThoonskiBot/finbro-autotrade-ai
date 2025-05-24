@@ -1,0 +1,6 @@
+@echo off
+py tools\phase_30001_gpt_trade_critic.py
+py tools\phase_30002_confidence_scorer.py
+py tools\phase_30003_daily_feedback_generator.py
+py tools\phase_30004_exposure_evaluator.py
+py tools\phase_30005_review_compiler.py

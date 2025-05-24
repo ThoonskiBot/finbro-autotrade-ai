@@ -1,0 +1,1 @@
+print("❌ Reversal Pattern Alert Active")

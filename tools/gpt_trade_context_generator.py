@@ -1,0 +1,1 @@
+# Pulls GPT commentary on current ticker before trade fires

@@ -1,0 +1,1 @@
+# Finds past similar trades for strategy reinforcement

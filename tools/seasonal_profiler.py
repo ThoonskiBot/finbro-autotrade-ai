@@ -1,0 +1,1 @@
+# Profiles ticker/strategy by month and time of year

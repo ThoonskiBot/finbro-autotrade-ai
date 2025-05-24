@@ -1,0 +1,1 @@
+# Generates heatmap from strategy/ticker performance data.

@@ -1,0 +1,1 @@
+# Detects unusual trade behavior based on confidence vs result patterns

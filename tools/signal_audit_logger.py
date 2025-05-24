@@ -1,0 +1,1 @@
+# Logs every signal decision and reason (e.g., filtered: sentiment too low)

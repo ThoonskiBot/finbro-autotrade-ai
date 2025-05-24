@@ -1,0 +1,1 @@
+# Captures runtime exceptions and logs GPT-readable summaries

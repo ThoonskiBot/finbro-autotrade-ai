@@ -1,0 +1,13 @@
+﻿# FINBRO .gitignore
+logs/
+reports/
+*.txt
+test_launcher_*.py
+*.pyc
+__pycache__/
+*.zip
+*.pdf
+*.png
+venv/
+.DS_Store
+Thumbs.db

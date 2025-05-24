@@ -1,0 +1,1 @@
+print("🧠 GPT Strategy Naming Engine running... (name: MomentumHunter, ReversalSnap, NeutralGrid)")

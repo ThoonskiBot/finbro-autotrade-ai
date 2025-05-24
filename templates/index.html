@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FINBRO PnL Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>📈 FINBRO PnL Chart + Control Panel</h1>
+
+    <section id="toggles">
+        <h2>🎛 Strategy Toggles</h2>
+        <div id="strategy-toggles">Loading strategies...</div>
+    </section>
+
+    <section id="summary-block">
+        <h2>🧠 GPT Summary</h2>
+        <pre id="summary">Loading...</pre>
+    </section>
+
+    <section id="log-block">
+        <h2>📄 Trade Log</h2>
+        <pre id="log">Loading...</pre>
+    </section>
+
+    <section id="pnl-block">
+        <h2>💰 Daily PnL</h2>
+        <canvas id="pnlChart" width="600" height="200"></canvas>
+    </section>
+
+    <script src="/static/dashboard.js"></script>
+</body>
+</html>
+<meta charset="UTF-8">

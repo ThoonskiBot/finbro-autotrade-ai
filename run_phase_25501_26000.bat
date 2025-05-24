@@ -1,0 +1,6 @@
+@echo off
+py tools\phase_25501_confidence_visualizer.py
+py tools\phase_25502_smart_executor.py
+py tools\phase_25503_pnl_attribution_tree.py
+py tools\phase_25504_live_rl_trainer.py
+py tools\phase_25505_risk_weighted_order_adjuster.py

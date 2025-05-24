@@ -1,0 +1,10 @@
+{
+    "AAPL": {
+        "score": 8.3,
+        "signal": "buy"
+    },
+    "TSLA": {
+        "score": 4.2,
+        "signal": "skip"
+    }
+}

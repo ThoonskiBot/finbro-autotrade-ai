@@ -1,0 +1,1 @@
+# Filter trades based on macroeconomic events

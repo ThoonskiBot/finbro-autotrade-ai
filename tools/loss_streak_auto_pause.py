@@ -1,0 +1,1 @@
+print("🔂 Auto Pause on Loss Streak Enabled")

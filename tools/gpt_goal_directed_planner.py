@@ -1,0 +1,1 @@
+# GPT generates and explains a strategy to achieve a specific trading goal

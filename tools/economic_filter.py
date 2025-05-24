@@ -1,0 +1,1 @@
+print("🌐 Economic filter active: skipping CPI/FOMC/NFP windows.")

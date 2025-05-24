@@ -1,0 +1,1 @@
+# GPT module that narrates weekly portfolio logic
